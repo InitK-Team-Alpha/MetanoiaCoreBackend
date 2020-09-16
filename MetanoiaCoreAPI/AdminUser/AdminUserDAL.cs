@@ -1,4 +1,5 @@
-using MetanoiaCoreAPI.Infra;
+using MetanoiaCoreAPI.Infa;
+
 namespace MetanoiaCoreAPI.AdminUser
 {
 
@@ -10,7 +11,12 @@ namespace MetanoiaCoreAPI.AdminUser
             _context = dbContext
         }
 
-        
+        public async CreateAdminUser(string username, string password)
+        {   
+            
+        }
+
+
     }
 
 }
