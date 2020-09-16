@@ -11,7 +11,7 @@ namespace MetanoiaCoreAPI.AdminUser
             _context = dbContext
         }
 
-        public async CreateAdminUser(string username, string password)
+        public async CreateAdminUser2(string username, string password)
         {   
             
         }
