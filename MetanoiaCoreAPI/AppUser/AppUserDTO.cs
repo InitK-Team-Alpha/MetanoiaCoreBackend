@@ -19,12 +19,12 @@ namespace MetanoiaCoreAPI.AppUser
     {
         public int ID { get; set; }
 
-        public int PsychologyCausesID {get; set;}
+        public int PsychologyCausesID { get; set; }
 
-        public UserPsychologyCauses PsychologyCauses {get; set;}
+        public UserPsychologyCauses PsychologyCauses { get; set; }
 
-        public int PsychologyEffectsID {get; set;}
-        public UserPsychologyEffects PsychologyEffects{get; set;}
+        public int PsychologyEffectsID { get; set; }
+        public UserPsychologyEffects PsychologyEffects { get; set; }
         public string UserName { get; set; }
 
         public string Password { get; set; }
@@ -40,9 +40,9 @@ namespace MetanoiaCoreAPI.AppUser
 
         public List<string> Hobbies { get; set; }
 
-        public string Religion {get;set;}
+        public string Religion { get; set; }
 
-        public DateTime CreatedDate {get;set;}
+        public DateTime CreatedDate { get; set; }
 
 
 
@@ -66,7 +66,6 @@ namespace MetanoiaCoreAPI.AppUser
             builder.Property(p => p.RelationshipStatus).HasColumnType("varchar(14)").IsRequired();
             builder.Property(p => p.Hobbies).HasColumnName("text[]").IsRequired();
             builder.Property(p => p.Religion).HasColumnName("varchar(30)").IsRequired();
-
             builder.Property(p => p.CreatedDate).HasColumnType("date").HasDefaultValueSql("GETDATE()");
 
 

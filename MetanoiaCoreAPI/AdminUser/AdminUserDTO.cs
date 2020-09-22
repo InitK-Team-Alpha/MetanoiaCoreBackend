@@ -20,7 +20,8 @@ namespace MetanoiaCoreAPI.AdminUser
         public string Password { get; set; }
 
         public AdminRole Role { get; set; }
-
+        public object Name { get; internal set; }
+        public bool IsComplete { get; internal set; }
     }
 
     public class AdminUserConfiguration : IEntityTypeConfiguration<AdminUserDTO>
